@@ -32,7 +32,7 @@ public class NaturalNos{
 		Scanner sc =new Scanner(System.in);
 		System.out.println("Enter the number till you want to print  : ");
 		int num= sc.nextInt();
-		int i=1,sume=0;
+		int i=1,sume=0,sumo=0;
 		System.out.println(" Even numbers are : ");
 		while(i<=num){
 			if(i%2==0){
@@ -42,5 +42,16 @@ public class NaturalNos{
 			i++;
 		}//end of while
 		System.out.println("Sum of even numbers is : "+sume);
+		System.out.println("\n");
+		i=1;
+		System.out.println(" Odd numbers are : ");
+		while(i<=num){
+			if(i%2!=0){
+				System.out.print(" "+i);
+				sumo+=i;// sum =sum+i
+			}
+			i++;
+		}//end of while
+		System.out.println("Sum of odd numbers is : "+sumo);
 	}//end of main
 }//end of class
